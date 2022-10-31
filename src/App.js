@@ -22,9 +22,9 @@ function App() {
         <button className="btn btn-primary" onClick={getPhotos}>
           Get Photos
         </button>
-        {/* {data.length >= 1 && (
-          <button className="btn btn-primary d-block mt-2">Home</button>
-        )} */}
+        {{data.length >= 1 && (
+          <button className="btn btn-primary d-block mt-2" onClick={() => window.location.reload(false)>Home</button>
+        )}}
 
         <Gallery data={data} date={date} />
       </center>
