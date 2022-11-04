@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Gallery from "./Gallery";
+import LoadingSpinner from "./LoadingSpinner";
 
 function App() {
   const [data, setData] = useState([]);
