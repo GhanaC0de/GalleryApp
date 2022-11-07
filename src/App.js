@@ -21,7 +21,7 @@ function App() {
       });
     setLoading(false);
   };
-  
+
   const homeButtonHandler = () => {
     window.location.reload(false);
     setData([]);
@@ -31,6 +31,18 @@ function App() {
     <div>
       <center>
         <h1>Photo Gallery Web app</h1>
+        {data.length === 0 && (
+          <button className="btn btn-primary" onClick={getPhotos}>
+            Get Photos
+          </button>
+        )}
+        {data.length >= 1 && (
+          <button
+            className="btn btn-primary d-block mt-2"
+            onClick={homeButtonHandler}
+          >
+            Home
+          </button>
         {data.length === 0 && (<button className="btn btn-primary" onClick={getPhotos}>
           Get Photos
         </button>)}
