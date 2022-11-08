@@ -7,7 +7,7 @@ function Gallery({ data, date }) {
         {data.map((photos, index) => {
           const url = `https://farm${photos.farm}.staticflickr.com/${photos.server}/${photos.id}_${photos.secret}.jpg`;
           return (
-            <div className="col-4 m-2 image_container" key={index}>
+            <div className="col-xs-12 col-sm-2 col-md-3 col-lg-4 col-xl-6 m-2 image_container" key={index}>
               <img className="image" src={url} alt="" />
               <div className="description mt-2">
                 <h4 className="title">{photos.title}</h4>
