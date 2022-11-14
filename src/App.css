@@ -11,8 +11,14 @@
 }
 
 .image:hover{
-  transform: scale(1.2);
-  z-index: 2;
+  animation-name: effect;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
+
+@keyframes effect {
+  from{transform: rotateZ(0deg);}
+  to{transform: rotateZ(360deg);}
 }
 
 
